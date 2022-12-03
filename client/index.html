@@ -1,0 +1,249 @@
+<!-- Homepage -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Willow Bend Wheels</title>
+        <link rel="stylesheet" href="./resources/css/index.css">
+        <link rel="stylesheet" href="https://use.typekit.net/imo6mdg.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+        <link rel="icon" href="./resources/images/logo.png">
+    </head>
+
+
+    <body>
+        <!-- First Panel -->
+            <!-- Navbar -->
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="inventory.html">Car Listings</a></li>
+                    <li><a href="#sell">Sell Your Car</a></li>
+                    <li><a href="financing.html">Loan Estimator</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                <img class="logo" src="./resources/images/logo.png" alt="logo">
+            </nav>
+            
+            <div id="home" class="container">
+                <div class="trapezoid"></div>
+
+                <span class="wbw_title">Willow Bend<br>Wheels</span>
+                <span class="wbw_motto">CARS MADE ACCESSIBLE.</span>
+
+                <img class="bg" src="./resources/images/homepage_front.jpeg" alt="bmw-in-fall-forest">
+            </div>
+        <!-- First Panel End -->
+            
+        <!-- Second Panel -->
+            <div class="container2">
+                <div class="grid">
+                    <div class="item">
+                        <img class="item-img" src="./resources/images/icon1.png" alt="car">
+                        <span class="item-txt">Buy Pre-Owned Cars</span>
+                    </div>
+                    <div class="item">
+                        <img class="item-img" src="./resources/images/icon2.png" alt="hand-keys">
+                        <span class="item-txt">Sell Us Your Car</span>
+                    </div>
+                    <div class="item">
+                        <img class="item-img" src="./resources/images/icon3.png" alt="computer">
+                        <span class="item-txt">Explore Our Listings</span>
+                    </div>
+                    <div class="item">
+                        <img class="item-img" src="./resources/images/icon4.png" alt="piggy-bank">
+                        <span class="item-txt">Get A Quote</span>
+                    </div>
+                </div>
+                <span class="second_title center">Find Your Dream Car</span>
+
+                <form class="search_form center" action="">
+                    <input class="search_input" type="search" placeholder="Search by year, make, model, or feature">
+                </form>
+
+                <div class="filter center">
+                    <span class="filter_title center">Filter By Category</span>
+
+                    <div class="filter_grid">
+                        <select class="filter_item filter_txt" name="brand" id="brand">
+                            <option value="" disabled selected>Brand</option>
+                            <option value="all brands">All Brands</option>
+                            <option value="audi">Audi</option>
+                            <option value="bmw">BMW</option>
+                            <option value="chevy">Chevrolet</option>
+                            <option value="chrysler">Chrysler</option>
+                            <option value="dodge">Dodge</option>
+                            <option value="ferrari">Ferrari</option>
+                            <option value="ford">Ford</option>
+                            <option value="genesis">Genesis</option>
+                            <option value="gmc">GMC</option>
+                            <option value="honda">Honda</option>
+                            <option value="hyundai">Hyundai</option>
+                            <option value="infinity">Infinity</option>
+                            <option value="kia">Kia</option>
+                            <option value="lambo">Lamborghini</option>
+                            <option value="lexus">Lexus</option>
+                            <option value="lucid">Lucid</option>
+                            <option value="mazda">Mazda</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="nissan">Nissan</option>
+                            <option value="porsche">Porsche</option>
+                            <option value="ram">Ram</option>
+                            <option value="subaru">Subaru</option>
+                            <option value="tesla">Tesla</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="volks">Volkswagen</option>
+                            <option value="volvo">Volvo</option>
+                        </select>
+                        <select class="filter_item filter_txt" name="year" id="year">
+                            <option value="" disabled selected>Year</option>
+                            <option value="all years">All Years</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                            <option value="2004">2004</option>
+                            <option value="2005">2005</option>
+                            <option value="2006">2006</option>
+                            <option value="2007">2007</option>
+                            <option value="2008">2008</option>
+                            <option value="2009">2009</option>
+                            <option value="2010">2010</option>
+                            <option value="2011">2011</option>
+                            <option value="2012">2012</option>
+                            <option value="2013">2013</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                        </select>
+                        <select class="filter_item filter_txt" name="body" id="body">
+                            <option value="" disabled selected>Body Style</option>
+                            <option value="all styles">All Styles</option>
+                            <option value="convertible">Convertible</option>
+                            <option value="coupe">Coupe</option>
+                            <option value="crossover">Crossover</option>
+                            <option value="luxury">Luxury</option>
+                            <option value="sedan">Sedan</option>
+                            <option value="sports">Sports Car</option>
+                            <option value="suv">SUV</option>
+                            <option value="truck">Truck</option>
+                            <option value="van">Van</option>
+                            <option value="wagon">Wagon</option>
+                        </select>
+                        <select class="filter_item filter_txt" name="mileage" id="mileage">
+                            <option value="" disabled selected>Mileage</option>
+                            <option value="all miles">All Miles</option>
+                            <option value="&lt 10,000">&lt 10,000</option>
+                            <option value="&gt 200,000">&gt 200,000</option>
+                        </select>
+                        <select class="filter_item filter_txt" name="color" id="color">
+                            <option value="" disabled selected>Color</option>
+                            <option value="all colors">All Colors</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="red">Red</option>
+                            <option value="orange">Orange</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                            <option value="indigo">Indigo</option>
+                            <option value="violet">Violet</option>
+                        </select>
+                        <select class="filter_item filter_txt" name="price" id="price">
+                            <option value="" disabled selected>Price</option>
+                            <option value="all prices">All Prices</option>
+                            <option value="&lt $10,000">&lt $10,000</option>
+                            <option value="&gt $100,000">&gt $100,000</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                
+                <img class="bg" src="./resources/images/homepage_secondary.png" alt="car-on-mountain-road">
+            </div>
+        <!-- Second Panel End -->
+
+        <!-- Third Panel -->
+            <div class="container2-black">
+                <span class="rest_titles center">Browse By Brand</span>
+                <img class="logos" src="./resources/images/car_logos.jpeg" alt="car-logos">
+            </div>
+        <!-- Third Panel End -->
+
+        <!-- Fourth Panel -->
+            <div class="container2">
+                <span class="rest_titles center">Shop Sedans</span>
+
+                <div class="button_grid center">
+                    <button class="button">
+                        <span class="button_txt">Custom Order</span>
+                    </button>
+                    <button class="button2">
+                        <span class="button_txt2">Existing Inventory</span>
+                    </button>
+                </div>
+
+                <img class="cars" src="./resources/images/sedan.png" alt="sedan">
+            </div>
+        <!-- Fourth Panel End -->
+
+        <!-- Fifth Panel -->
+                <div class="container2-black">
+                    <span class="rest_titles center">Explore SUVs</span>
+
+                    <div class="button_grid center">
+                        <button class="button2">
+                            <span class="button_txt2">Custom Order</span>
+                        </button>
+                        <button class="button_white">
+                            <span class="button_txt2">Existing Inventory</span>
+                        </button>
+                    </div>
+
+                    <img class="suv" src="./resources/images/suv.png" alt="suv">
+                </div>
+        <!-- Fifth Panel End -->
+
+        <!-- Sixth Panel -->
+            <div class="container2">
+                <span class="rest_titles center">Check Out Coupes</span>
+
+                <div class="button_grid center">
+                    <button class="button">
+                        <span class="button_txt">Custom Order</span>
+                    </button>
+                    <button class="button2">
+                        <span class="button_txt2">Existing Inventory</span>
+                    </button>
+                </div>
+                
+                <img class="cars" src="./resources/images/coupe.png" alt="coupe">
+            </div>
+        <!-- Sixth Panel End -->
+
+        <!-- Footer -->
+        <section class="footer">
+            <h3 class="footer-title">Willow Bend Wheels</h3>
+            <h5 class="footer-subtitle">1604 Preston Rd, Plano TX 75093<br>
+                +1-800-273-8255<br>
+                Sales: Monday - Saturday 8 AM - 5 PM CST</h5>
+            <ul class="footer-links">
+                <li><a href="#home" class="footer-link link">Home</a></li>
+                <li><a href="about.html" class="footer-link link">About</a></li>
+                <li><a href="#contact" class="footer-link link">Contact</a></li>
+                <li><a href="#privacy-policy" class="footer-link link">Privacy Policy</a></li>
+                <li><a href="#sitemap" class="footer-link link">Sitemap</a></li>
+            </ul>
+        </section>
+        <!-- Footer End -->
+        
+    </body>
+</html>
+
+<!-- BPA/2022-2023/web_design/index.html
+/Users/ashley/Documents/BPA/2022-2023/web_design/index.html -->

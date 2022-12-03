@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Willow Bend Wheels</title>
+        <link rel="stylesheet" href="./resources/css/financing.css">
+        <script src="./resources/js/financing.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+            <!-- First Panel -->
+                <!-- Navbar -->
+                <nav>
+                    <ul class="navbar">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="inventory.html">Car Listings</a></li>
+                        <li><a href="#sell">Sell Your Car</a></li>
+                        <li><a href="#financing">Loan Estimator</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                    <img class="logo" src="./resources/images/logo.png" alt="logo">
+                </nav>
+            
+            <section id="financing" class="bg-small" style="background-image: url('./resources/images/financing-banner-primary.jpeg')";>
+                <img class="opaque-overlay" src="./resources/images/opaque-overlay.png" alt="">
+                <h1 class="centered-text">Loan Estimator
+                    <p class="banner-subtitle">Cars available to all.</p>
+                </h1>
+            </section>
+
+            <!-- Second Panel -->
+            <section id="financing-options" class="panel-two">
+                <section class="page-nav">
+                    <ul>
+                        <li><a href="#financing-options" class="page-nav-link">Financing Options</a></li>
+                        <li><a href="#calculator" class="page-nav-link">Calculator</a></li>
+                        <li><a href="#schedule-consultation" class="page-nav-link">Schedule Consultation</a></li>
+                        <li><a href="#faq" class="page-nav-link">FAQ</a></li>
+                    </ul>
+                    <hr class="black-divider">
+                </section>
+    
+                <section class="flex-container">
+                    <div class="flex-child thirds">
+                        <h3>
+                            Trade In
+                        </h3>
+                        <p class="black">
+                            Get a fair value for your car without all the hassle.
+                            We will match any offer you get from CarMax with an additional $1000.
+                        </p>
+                    </div>
+                    <div class="flex-child thirds">
+                        <h3>
+                            Lease
+                        </h3>
+                        <p class="black">
+                            Short and long-term leases are available at market rates.
+                            All leases come with the Willow Bend Difference, a comprehensive warranty.
+                        </p>
+                    </div>
+                    <div class="flex-child thirds">
+                        <h3>
+                            Buy
+                        </h3>
+                        <p class="black">
+                            Purchase your new set of wheels at an affordable price outright or with the help of our certified in-house financing.
+                        </p>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Third Panel -->
+            <section id="calculator" class="panel-three brown-section">
+                <h2>Financing Calculator</h2>
+                <hr class="white-divider">
+                <section class="flex-container">
+                    <div class="flex-child">
+                        <form class="calculator-form">
+                            <label for="Car Price"><h4>Car Price</h4></label><br>
+                            <input type="number" class="input-box" name="car-price" placeholder="Enter the price of your car; enter 0 if none"><br>
+                            <label for="Down Payment"><h4>Approximate Down Payment</h4></label><br>
+                            <input type="number" class="input-box" name="down-payment" placeholder="Enter your approximate down payment; enter 0 if none"><br>
+                            <label for="Trade In"><h4>Trade In Value</h4></label><br>
+                            <input type="number" class="input-box" name="trade-in" placeholder="Enter your approximate trade in value; enter 0 if none"><br>
+                            <label for="disclaimer"><p class="white">*We guarantee that you will get at least the CarMax value + $1000</p></label><br>
+                        </form>
+                    </div>
+                    <div class="flex-child">
+                        <h4 class="centered-h4">What's Your Credit Score?</h4>
+                        <div class="credit-score-grid">
+                            <button btn-val="0">Over 740</button>
+                            <button btn-val="1">720-739</button>
+                            <button btn-val="2">700-719</button>
+                            <button btn-val="3">680-699</button>
+                            <button btn-val="4">660-679</button>
+                            <button btn-val="5">640-659</button>
+                            <button btn-val="6">620-639</button>
+                            <button btn-val="7">Under 619</button>
+                        </div>
+                    </div>
+                    <div class="flex-child">
+                        <div class="leasing-purchasing-grid">
+                            <button class="lease-purchase" btn-val="0">Leasing</button>
+                            <button class="lease-purchase" btn-val="1">Purchasing</button>
+                            <h4 class="span-two">Finanace/Lease Length</h4>
+                            <button class="lease-length" btn-val="12">12 months</button>
+                            <button class="lease-length" btn-val="24">24 months</button>
+                            <button class="lease-length" btn-val="36">36 months</button>
+                            <button class="lease-length" btn-val="60">60 months</button>
+                            <form action="" class="calculator-form">
+                                <input type="number" name="months-lease" class="span-two" placeholder="Enter a custom amount of months">
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            
+            <section class="panel-three-half brown-section">
+                <hr class="white-divider">
+                <div class="flex-container">
+                    <div class="flex-child">
+                        <h3 class="calculator-title">Your Estimated <br>Monthly Payment</h3>
+                    </div>
+                    <div id="calculator-output" class="flex-child">
+                        <p id="calc-output-text">Please Fill in All Fields</p>
+                    </div>
+                </div>
+                <p class="white">*The price listed above is an estimation and not an official offer.
+                    Taxes are not included.
+                    There are additional service fees and a delivery fee as well.
+                    Please email, call, or schedule a consultation to work out the final details.
+                    <br>
+                    *Leases are approximations assuming the car is driven 10,000 miles a year.
+                    Any miles over 10,000 will be charged as extra.
+                </p>
+            </section>
+
+            <!-- Fourth Section -->
+            <section id="schedule-consultation" class="panel-four">
+                <div class="flex-child">
+                    <h2 class="consultation-title">Schedule a Consulation</h2>
+                    <form action="" class="consultation-form">
+                        <label for="Full-Name">Full Name</label>
+                        <input type="text" placeholder="Enter your first and last name and title. ex: Mr. Charles Cheung"></input>
+                        <label for="Preferred-Email">Preferred Email</label>
+                        <input type="text" placeholder="ex: charlescheung@gmail.com"></input>
+                        <label for="Phone-Number">Phone Number</label>
+                        <input type="text" placeholder="ex: 123-456-7890"></input>
+                        <label for="Time-Available">Days/Times Available</label>
+                        <input type="text" placeholder="ex: Monday from 9am to 3pm"></input>
+                        <label for="Other">Other</label>
+                        <input type="text" placeholder="Enter anything else you would like us to know"></input>
+                        <input type="button" value="Submit">
+                    </form>
+                </div>
+                <div class="flex-child consultation-image-container">
+                    <img src="./resources/images/consultation-form-image.jpeg" alt="" class="consultation-image">
+                </div>
+            </section>
+
+            <!-- Fifth Section -->
+            <section id="faq" class="panel-five">
+                <h2 class="faq-title">FAQ</h2>
+                <details class="faq-question">
+                    <summary>Can I have a free car?</summary>
+                    <p>No.</p>
+                </details>
+                <details class="faq-question">
+                    <summary>Is there a minimum down payment?</summary>
+                    <p>No.</p>
+                </details>
+                <details class="faq-question">
+                    <summary>Is there a minimum credit requirement?</summary>
+                    <p>No.</p>
+                </details>
+                <details class="faq-question">
+                    <summary>Do you offer gap insurance?</summary>
+                    <p>No.</p>
+                </details>
+                <details class="faq-question">
+                    <summary>How much wiill tax, title, and license cost?</summary>
+                    <p>No.</p>
+                </details>
+                <details class="faq-question">
+                    <summary>Can I finance using my bank?</summary>
+                    <p>Yes, financing through a bank or other credit lender is fine.
+                        Let us know that you're preapproved during the consultation.
+                        We might even offer a lower rate than the loan you currently have.
+                    </p>
+                </details>
+            </section>
+            
+            <!-- Footer -->
+            <section class="footer">
+                <h3 class="footer-title">Willow Bend Wheels</h3>
+                <h5 class="footer-subtitle">1604 Preston Rd, Plano TX 75093<br>
+                    +1-800-273-8255<br>
+                    Sales: Monday - Saturday 8 AM - 5 PM CST</h5>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="footer-link link">Home</a></li>
+                    <li><a href="about.html" class="footer-link link">About</a></li>
+                    <li><a href="#contact" class="footer-link link">Contact</a></li>
+                    <li><a href="#privacy-policy" class="footer-link link">Privacy Policy</a></li>
+                    <li><a href="#sitemap" class="footer-link link">Sitemap</a></li>
+                </ul>
+            </section>
+    </body>
+</html>

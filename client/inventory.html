@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Willow Bend Wheels</title>
+        <link rel="stylesheet" href="./resources/css/inventory.css">
+        <!-- Adobe Fonts -->
+        <link rel="stylesheet" href="https://use.typekit.net/uhx3pje.css">
+        <link rel="icon" href="./resources/images/logo.png">
+        
+        <script src="./resources/js/inventory.js" defer></script>
+    </head>
+
+    <body>
+        <!-- First Panel -->
+            <!-- Navbar -->
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#listings">Car Listings</a></li>
+                    <li><a href="#sell">Sell Your Car</a></li>
+                    <li><a href="financing.html">Loan Estimator</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                <img class="logo" src="./resources/images/logo.png" alt="logo">
+            </nav>
+
+            <section id="listings" class="banner" style="background-image: url('./resources/images/inventory-banner.jpg')";>
+                <div class="opaque-overlay">
+                    <img src="./resources/images/opaque-overlay.png" alt="">
+                </div>
+                <div class="banner-container">
+                    <h1 class="banner-title">Inventory</h1>
+                    <h4 class="banner-subtitle">A car for every person.</h4>
+                </div>
+            </section>
+
+            <!-- Search Bar -->
+            <section class="search-container">
+                <form action="search-form" class="search-form">
+                    <input type="text" class="main-search-bar" placeholder="Find vehicles by year, make, model, or feature">
+                </form>
+            </section>
+
+            <!-- Filter Bar -->
+            <section class="filter-bar">
+                <h3 class="filter-title">Filter</h3>
+                <form action="filter-select-form" class="filter-select-form">
+                    <select name="brand" id="brand-filter">
+                        <option value="" disabled selected>Brand</option>
+                        <option value="all brands">All Brands</option>
+                        <option value="audi">Audi</option>
+                        <option value="bmw">BMW</option>
+                        <option value="chevy">Chevrolet</option>
+                        <option value="chrysler">Chrysler</option>
+                        <option value="dodge">Dodge</option>
+                        <option value="ferrari">Ferrari</option>
+                        <option value="ford">Ford</option>
+                        <option value="genesis">Genesis</option>
+                        <option value="gmc">GMC</option>
+                        <option value="honda">Honda</option>
+                        <option value="hyundai">Hyundai</option>
+                        <option value="infinity">Infinity</option>
+                        <option value="kia">Kia</option>
+                        <option value="lambo">Lamborghini</option>
+                        <option value="lexus">Lexus</option>
+                        <option value="lucid">Lucid</option>
+                        <option value="mazda">Mazda</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="nissan">Nissan</option>
+                        <option value="porsche">Porsche</option>
+                        <option value="ram">Ram</option>
+                        <option value="subaru">Subaru</option>
+                        <option value="tesla">Tesla</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="volks">Volkswagen</option>
+                        <option value="volvo">Volvo</option>
+                    </select>
+                    <select name="year" id="year-filter">
+                        <option value="" disabled selected>Year</option>
+                        <option value="all years">All Years</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                    </select>
+                    <select name="body-style" id="body-style-filter">
+                        <option value="" disabled selected>Body Style</option>
+                        <option value="all styles">All Styles</option>
+                        <option value="convertible">Convertible</option>
+                        <option value="coupe">Coupe</option>
+                        <option value="crossover">Crossover</option>
+                        <option value="luxury">Luxury</option>
+                        <option value="sedan">Sedan</option>
+                        <option value="sports">Sports Car</option>
+                        <option value="suv">SUV</option>
+                        <option value="truck">Truck</option>
+                        <option value="van">Van</option>
+                        <option value="wagon">Wagon</option>
+                    </select>
+                    <select name="mileage" id="mileage-filter">
+                        <option value="" disabled selected>Mileage</option>
+                        <option value="all miles">All Miles</option>
+                        <option value="&lt 10,000">&lt 10,000</option>
+                        <option value="&gt 200,000">&gt 200,000</option>
+                    </select>
+                    <select name="color" id="color-filter">
+                        <option value="" disabled selected>Color</option>
+                        <option value="all colors">All Colors</option>
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                        <option value="red">Red</option>
+                        <option value="orange">Orange</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                        <option value="indigo">Indigo</option>
+                        <option value="violet">Violet</option>
+                    </select>
+                    <select name="price" id="price-filter">
+                        <option value="" disabled selected>Price</option>
+                        <option value="all prices">All Prices</option>
+                        <option value="&lt $10,000">&lt $10,000</option>
+                        <option value="&gt $100,000">&gt $100,000</option>
+                    </select>
+                </form>
+            </section>
+
+            <!-- Results Section -->
+            <section class="inventory-results">
+                <div class="inventory-entry">
+                    <div class="inventory-main-heading">
+                        <h5>2023 Jaguar</h5>
+                        <h3 class="car-title">F-Pace SVR SUV</h3>
+                        <h3 class="car-price">$99,999</h3>
+                    </div>
+                    <hr class="grey">
+                    <div class="photo-carousel">
+                        <img src="./resources/images/inventory-jaguar-fpace-svr-suv.webp" alt="Jaguar F-Pace SVR SUV Image">
+                    </div>
+                    <hr class="grey">
+                    <div class="inventory-bottom-info">
+                        <div class="inventory-side-info">
+                            <div class="inventory-colors">
+                                <span class="inline">
+                                    <div class="color-sample blue"></div>
+                                    <p class="paragraph color-sample-text">Ocean Blue Exterior</p>
+                                </span>
+                                <span class="inline">
+                                    <div class="color-sample black"></div>
+                                    <p class="paragraph color-sample-text">Ballistic Black Interior</p>
+                                </span>
+                            </div>
+                            <hr class="grey">
+                            <div class="inventory-small-details">
+                                <p class="paragraph">
+                                    15/21 · City/Hwy<br>
+                                    10,594 miles<br>
+                                    5.0-liter V-8<br>
+                                    RWD<br>
+                                    Automatic<br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="inventory-buttons">
+                            <button class="button-one">View Details</button>
+                            <button class="button-one">Ask a Question</button>
+                            <button class="button-two">Test Drive</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="inventory-entry">
+                    <div class="inventory-main-heading">
+                        <h5>2003 BMW</h5>
+                        <h3 class="car-title">Z4 Convertible</h3>
+                        <h3 class="car-price">$1,600</h3>
+                    </div>
+                    <hr class="grey">
+                    <div class="photo-carousel">
+                        <img src="./resources/images/inventory-bmw-z4-2003.jpg" alt="BMW Z4 Convertible 2003 Image">
+                    </div>
+                    <hr class="grey">
+                    <div class="inventory-bottom-info">
+                        <div class="inventory-side-info">
+                            <div class="inventory-colors">
+                                <span class="inline">
+                                    <div class="color-sample black"></div>
+                                    <p class="paragraph color-sample-text">Ballistic Black Exterior</p>
+                                </span>
+                                <span class="inline">
+                                    <div class="color-sample grey"></div>
+                                    <p class="paragraph color-sample-text">Tenacious Tan Interior</p>
+                                </span>
+                            </div>
+                            <hr class="grey">
+                            <div class="inventory-small-details">
+                                <p class="paragraph">
+                                    18/26 · City/Hwy<br>
+                                    157,158 miles<br>
+                                    Inline 6<br>
+                                    RWD<br>
+                                    Manual<br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="inventory-buttons">
+                            <button class="button-one">View Details</button>
+                            <button class="button-one">Ask a Question</button>
+                            <button class="button-two">Test Drive</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="inventory-entry">
+                    <div class="inventory-main-heading">
+                        <h5>2009 Chevrolet</h5>
+                        <h3 class="car-title">Camaro</h3>
+                        <h3 class="car-price">$3,081</h3>
+                    </div>
+                    <hr class="grey">
+                    <div class="photo-carousel">
+                        <img src="./resources/images/inventory-chevrolet-camaro-2009.jpg" alt="Chevrolet Camaro 2009 Image">
+                    </div>
+                    <hr class="grey">
+                    <div class="inventory-bottom-info">
+                        <div class="inventory-side-info">
+                            <div class="inventory-colors">
+                                <span class="inline">
+                                    <div class="color-sample red"></div>
+                                    <p class="paragraph color-sample-text">Radiant Red Exterior</p>
+                                </span>
+                                <span class="inline">
+                                    <div class="color-sample black"></div>
+                                    <p class="paragraph color-sample-text">Shadow Black Interior</p>
+                                </span>
+                            </div>
+                            <hr class="grey">
+                            <div class="inventory-small-details">
+                                <p class="paragraph">
+                                    18/29 · City/Hwy<br>
+                                    77,055 miles<br>
+                                    V6<br>
+                                    RWD<br>
+                                    Automatic<br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="inventory-buttons">
+                            <button class="button-one">View Details</button>
+                            <button class="button-one">Ask a Question</button>
+                            <button class="button-two">Test Drive</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <main>
+                <div>
+                    <input placeholder="search by name" id="search-input">
+                    <button id="search-btn">Search</button>
+                </div>
+
+                <table id="table">
+                    <thead>
+                        <th>ID</th>
+                        <th>Make</th>
+                        <th>Model</th>
+                        <th>Type</th>
+                        <th>Price</th>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </main>
+            <script scr="inventory.js"></script>
+            
+            <!-- Footer -->
+            <section class="footer">
+                <h3 class="footer-title">Willow Bend Wheels</h3>
+                <h5 class="footer-subtitle">1604 Preston Rd, Plano TX 75093<br>
+                    +1-800-273-8255<br>
+                    Sales: Monday - Saturday 8 AM - 5 PM CST</h5>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="footer-link link">Home</a></li>
+                    <li><a href="about.html" class="footer-link link">About</a></li>
+                    <li><a href="#contact" class="footer-link link">Contact</a></li>
+                    <li><a href="#privacy-policy" class="footer-link link">Privacy Policy</a></li>
+                    <li><a href="#sitemap" class="footer-link link">Sitemap</a></li>
+                </ul>
+            </section>
+    </body>
+</html>
