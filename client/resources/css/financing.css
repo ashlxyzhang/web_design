@@ -79,8 +79,8 @@ body, html {
     z-index: 10000;
     position: fixed;
     top: 0;
-    height: 5.5vmin;
-    line-height: 5.5vmin;
+    height: 3em;
+    line-height: 3em;
     width: 100%;
     list-style-type: none;
     margin: 0;
@@ -96,8 +96,8 @@ li {
 
 li a {
     color: white;
-    padding: 7.5vmin;
-    font-size: 2vmin;
+    padding: 4%;
+    font-size: 1em;
     text-decoration: none;
     font-family: 'Glacial-Indifference';
 }
@@ -108,8 +108,8 @@ li a:hover {
 
 .logo {
     z-index: 10001;
-    height: 4vmin;
-    width: 4vmin;
+    height: 40px;
+    width: 40px;
     padding-left: 2vmin;
     padding-top: 0.6vmin;
     position: fixed;

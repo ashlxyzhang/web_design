@@ -44,8 +44,8 @@ body, html {
     z-index: 10000;
     position: fixed;
     top: 0;
-    height: 5.5vmin;
-    line-height: 5.5vmin;
+    height: 3em;
+    line-height: 3em;
     width: 100%;
     list-style-type: none;
     margin: 0;
@@ -61,14 +61,23 @@ li {
 
 li a {
     color: white;
-    padding: 7.5vmin;
-    font-size: 2vmin;
+    padding: 4%;
+    font-size: 1em;
     text-decoration: none;
     font-family: 'Glacial Indifference';
 }
 
 li a:hover {
     color: goldenrod;
+}
+
+.logo {
+    z-index: 10001;
+    height: 40px;
+    width: 40px;
+    padding-left: 2vmin;
+    padding-top: 0.6vmin;
+    position: fixed;
 }
 
 /* centered text moment */
@@ -112,15 +121,6 @@ li a:hover {
     border-right: 95vmin solid transparent;
     width: 40vmin;
     opacity: 0.43;
-}
-
-.logo {
-    z-index: 10001;
-    height: 4vmin;
-    width: 4vmin;
-    padding-left: 2vmin;
-    padding-top: 0.6vmin;
-    position: fixed;
 }
 
 /* second page top grid */
@@ -235,7 +235,7 @@ li a:hover {
     border-radius: 4px;
     border: solid #9B9B9B;
     border-width: 0.5px;
-    border-right: 4px solid transparent
+    border-right: 4px solid transparent;
 }
 
 .filter_txt {

@@ -93,8 +93,8 @@ body, html {
     z-index: 10000;
     position: fixed;
     top: 0;
-    height: 5.5vmin;
-    line-height: 5.5vmin;
+    height: 3em;
+    line-height: 3em;
     width: 100%;
     list-style-type: none;
     margin: 0;
@@ -110,8 +110,8 @@ li {
 
 li a {
     color: white;
-    padding: 7.5vmin;
-    font-size: 2vmin;
+    padding: 4%;
+    font-size: 1em;
     text-decoration: none;
     font-family: 'Glacial-Indifference';
 }
@@ -122,8 +122,8 @@ li a:hover {
 
 .logo {
     z-index: 10001;
-    height: 4vmin;
-    width: 4vmin;
+    height: 40px;
+    width: 40px;
     padding-left: 2vmin;
     padding-top: 0.6vmin;
     position: fixed;
@@ -196,7 +196,7 @@ li a:hover {
 .main-search-bar {
     margin: auto auto;
     padding: 0 1em;
-    height: 60%;
+    height: 3em;
     width: 80%;
 
     outline: none;
@@ -205,14 +205,13 @@ li a:hover {
     border: none;
 
     font-family: Lato;
-    font-size: 0.75em;
+    font-size: 1em;
     color: black;
 }
 
 .filter-bar {
-    padding: 1% 0;
-
-    height: 15%;
+    padding: 0.5% 0 1% 0;
+    height: auto;
     width: 100%;
     background-color: white;
     text-align: center;
@@ -227,7 +226,6 @@ li a:hover {
 
 .filter-select-form {
     margin: auto 10%;
-    padding: 0 0;
 
     display: flex;
     justify-content: space-between;
@@ -247,19 +245,14 @@ li a:hover {
     line-height: 2em;
 }
 
-.filter-select-form > select > option[value="disabled"] {
-    font-weight: 600;
-}
-
 .inventory-results {
     padding: 4em 0;
     height: auto;
     width: 100%;
 
     display: grid;
-    grid-template-columns: repeat(2, 40%);
-    grid-template-rows: 50em;
-    row-gap: 1%;
+    grid-template-columns: repeat(3, 30%);
+    row-gap: 25px;
     column-gap: 1%;
 
     justify-content: center;
@@ -268,56 +261,50 @@ li a:hover {
 }
 
 .inventory-entry {
-    margin-top: 4%;
     padding: 2em 2%;
-    width: 96%;
+    width: 95%;
     height: auto;
 
     background-color: white;
+    border-radius: 6px;
 }
 
 .inventory-main-heading {
     margin: auto auto;
     width: 80%;
-    height: 12%;
 }
 
 .inventory-main-heading > .car-title {
-    width: 26%;
-    position: absolute;
     text-align: left;
 }
 
 .inventory-main-heading > .car-price {
-    width: 32%;
-    position: absolute;
     text-align: right;
+    padding-bottom: 0.5em;
 }
 
 hr.grey {
     height: 2px;
+    width: 85%;
+    margin: auto auto;
     border: none;
     background-color: lightgrey;
 }
 
 .inventory-entry > .photo-carousel {
-    margin: 1% auto;
+    margin: auto;
     height: 50%;
-    width: 100%;
+    width: 85%;
 
     overflow: hidden;
     display: flex;
     justify-content: center;
-}
 
-.photo-carousel > img {
-    height: 100%;
-    width: 100%;
     object-fit: contain;
 }
 
 .inventory-bottom-info {
-    height: 40%;
+    height: auto;
     width: 100%;
 
     display: grid;
@@ -325,7 +312,7 @@ hr.grey {
 }
 
 .inventory-side-info {
-    height: 100%;
+    height: auto;
     width: 100%;
 }
 
@@ -383,12 +370,15 @@ hr.grey {
 }
 
 .inventory-buttons {
+    padding-right: 1em;
+    margin-bottom: 1em;
     text-align: right;
+    height: auto;
 }
 
 .button-one {
     margin-top: 5%;
-    height: 20%;
+    height: 25%;
     width: 70%;
 
     font-family: Lato;
@@ -396,8 +386,8 @@ hr.grey {
     font-size: 1em;
 
     background-color: white;
-    border: 2px solid black;
-    border-radius: 0;
+    border: 1px solid black;
+    border-radius: 0.5em;
 }
 
 .button-one:hover {
@@ -408,13 +398,13 @@ hr.grey {
 }
 
 .button-two {
-    margin-top: 5%;
-    height: 35%;
-    width: 100%;
+    margin-top: 7%;
+    height: 40%;
+    width: 90%;
 
     font-family: Lato;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: white;
 
     background-color: #D4C2C2;
@@ -423,7 +413,7 @@ hr.grey {
 }
 
 .button-two:hover {
-    background-color: #D1A42D;
+    background-color: #c38080;
 }
 
 .footer {
