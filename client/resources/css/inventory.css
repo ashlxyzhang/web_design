@@ -186,13 +186,6 @@ li a:hover {
     text-align: center;
 }
 
-.search-form {
-    height: 100%;
-    width: 100%;
-
-    display: flex;
-}
-
 .main-search-bar {
     margin: auto auto;
     padding: 0 1em;
@@ -207,6 +200,13 @@ li a:hover {
     font-family: Lato;
     font-size: 1em;
     color: black;
+}
+
+.no-data {
+    color: white;
+    text-align: center;
+    font-size: 4em;
+    font-family: aileron;
 }
 
 .filter-bar {
@@ -286,14 +286,13 @@ li a:hover {
 hr.grey {
     height: 2px;
     width: 85%;
-    margin: auto auto;
+    margin: 0.75em auto;
     border: none;
     background-color: lightgrey;
 }
 
 .inventory-entry > .photo-carousel {
     margin: auto;
-    height: 50%;
     width: 85%;
 
     overflow: hidden;
@@ -301,6 +300,10 @@ hr.grey {
     justify-content: center;
 
     object-fit: contain;
+}
+
+.inventory-entry > .photo-carousel > img {
+    width: 100%;
 }
 
 .inventory-bottom-info {
@@ -328,8 +331,8 @@ hr.grey {
 }
 
 .color-sample {
-    height: 1.25em;
-    width: 1.25em;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
     display: inherit;
 }
@@ -400,7 +403,7 @@ hr.grey {
 .button-two {
     margin-top: 7%;
     height: 40%;
-    width: 90%;
+    width: 100%;
 
     font-family: Lato;
     font-weight: bold;

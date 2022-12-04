@@ -20,4 +20,14 @@ car_inv.get('/getAll', (request, response) => {
     .then(data => response.json({data : data}))
 })
 
+car_inv.get('/search/:Make', (request, response) => {
+    const { Make } = request.params;
+    const db = dbService.getDbServiceInstance();
+
+    const result = db.searchByMake(Make);
+    
+    result
+    .then(data => response.json({data : data}))
+})
+
 car_inv.listen(process.env.PORT, () => console.log('car_inv is running'));

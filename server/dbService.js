@@ -39,6 +39,23 @@ class DbService {
             console.log(error);
         }
     }
+
+    async searchByMake(make) {
+        try {
+            const response = await new Promise((resolve, reject) => {
+                const query = "SELECT * FROM car_inventory WHERE Make = ?;";
+
+                connection.query(query, [make], (err, results) => {
+                    if (err) reject(new Error(err.message));
+                    resolve(results);
+                })
+            });
+            // console.log(response);
+            return response;
+        } catch (error) {
+            console.log(error);
+        }
+    }
 }
 
 

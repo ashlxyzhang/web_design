@@ -14,7 +14,7 @@ function loadHTMLTable(data) {
     const table = document.querySelector('.inventory-results');
 
     if (data.length === 0) {
-        table.innerHTML = "<span>No Data</span>";
+        table.innerHTML = "<span class='no-data'>No Data BRUH</span>";
         return;
     }
 
@@ -69,3 +69,20 @@ function loadHTMLTable(data) {
 
     table.innerHTML = tableHtml;
 }
+
+const searchBar = document.querySelector('#search-bar');
+searchBar.addEventListener("keypress", function(event) {
+    if (event.keyCode === 13) {
+        searchValue = searchBar.value.toLowerCase();
+        if ($(`#brand-filter option[value=${searchValue}]`).length > 0)
+            document.querySelector('#brand-filter').value = searchValue;
+        else
+            {
+                console.log("not in");
+                document.querySelector('#brand-filter').value = 'all brands';
+            }
+        fetch('http://localhost:5001/search/' + searchValue)
+        .then(response => response.json())
+        .then(data => loadHTMLTable(data['data']));
+    }
+});
